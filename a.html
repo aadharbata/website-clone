@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loco.css">
+
+</head>
+<body>
+    <div id="minicircle">
+
+    </div>
+    <div id="main">
+        <div id="hero">
+            <div id="nav">
+                <a href="#">cystebin</a>
+                <h4> menu+</h4> 
+            
+            </div>
+            <div id="heading">
+                <div class="bounding">
+                    <h1 class="boundingelem"> Product</h1>
+                </div>
+                <div class="bounding">
+                    <h1 class="boundingelem" id="secondh1"> Designer</h1>
+                </div>
+           
+            </div>
+            <div id="headerfooter">
+                <a href="#">previously worked at yml <i class="ri-corner-up-right-fill"></i></a>
+                <a href="$">protype ambassador <i class="ri-corner-up-right-fill"></i></a>
+                <div id="iconset">
+                    <div class="cirlces"><i class="ri-arrow-down-line"></i></div>
+                    <div class="cirlces"><i class="ri-arrow-down-line"></i></div>
+                </div>
+            </div>
+        </div>
+        <div id="second">
+            <div class="elem">
+                <img src="plug.png" alt="hey">
+               
+                <h1>The plug</h1>
+               
+               
+            </div>
+            
+                 <div class="elem">
+                    <img src="ixperience.png" alt="hey">
+                  
+                <h1>Experience</h1>
+               
+            </div>
+            <div class="elemlast elem">
+                <img src="hudu.png" alt="hey">
+               
+                <h1>Hudu</h1>
+               
+            </div>
+            
+            
+        </div>
+        <div id="about">
+        
+            <div id="img"></div>
+            <div id="textabout">
+                <h5>(about me)</h5>
+                <p>hii my name is aadhar batra hello hello hi jf ag ag g fdka g aklrjeo g alsfla ga lsdkfj glsdfjsla gdfslkjflsaf l flkjsadflsjf g laf g lag ag af ag ag ag g</p>
+                <a href="#">Call me</a>
+            </div>
+        </div>
+        <div id="subscribe">
+            <h5>forgot to mention</h5>
+            <h3>subscribe my youtube channel <i class="ri-arrow-right-up-line"></i></h3>
+        </div>
+        <div id="footer">
+            <div id="footerleft">
+                <h5> 2023 &copy;</h5>
+                <h5> 
+                    <span id="time"></span>
+
+                </h5>
+            </div>
+            <div id="footerright">
+                <a href="#">dribble</a>   <a href="#">instagram</a>   <a href="#">linkedin</a>   <a href="#">twitter</a>
+            </div>
+        </div>
+    </div>
+  <!-- Include GSAP (GreenSock Animation Platform) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.1/gsap.min.js"></script>
+
+
+<!-- Include Locomotive Scroll -->
+<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.min.js"></script>
+
+
+<!-- Include your custom JavaScript -->
+<script src="script.js"></script>
+<script>
+   setInterval(updatetime, 1000);
+
+function updatetime() {
+    const currentDate = new Date();
+    const hours = currentDate.getHours();
+    const minutes = currentDate.getMinutes();
+    const seconds = currentDate.getSeconds();
+    
+    // Format the time as HH:MM:SS
+    const formattedTime = `${addZero(hours)}:${addZero(minutes)}:${addZero(seconds)}`;
+    
+    // Display the formatted time in an element with the id "time"
+    time.innerHTML = formattedTime;
+}
+
+function addZero(value) {
+    // Helper function to add leading zero to single-digit values
+    return value < 10 ? `0${value}` : value;
+}
+
+</script>
+
+
+
+</body>
+</html>
